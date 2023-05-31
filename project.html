@@ -53,7 +53,7 @@
           height: 8vh;
           list-style: none;
           > li {
-            width: 33.33%;
+            width: 25%;
             > a {
               color: rgb(255, 216, 216);
               font-size: 1.5rem;
@@ -252,7 +252,134 @@
         }
        #music {
           background-image: url("musicBackground.png");
+          background-color: #b5f5ff;
+          transition: background-color 0.5s ease-in-out;
           background-size: cover;
+        }
+        .musicContainer{
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .albumContainer{
+          margin: 0 auto;
+          width: 400px;
+          height: 500px;
+          border-radius: 10%;
+          background-color: rgba(255, 255, 255, 0.6) ;
+          border: 10px outset rgba(255, 255, 255, 0.6);
+        }
+        .musicButton{
+          position:relative;
+          width: 40px;
+          height: 260px;
+          border-radius: 40%;
+          border: none;
+          background: none;
+        }
+        .musicPrevious{
+          bottom: 400px;
+        }
+        .musicNext{
+          bottom: 400px;
+          left: 300px;
+        }
+        .albumSlider{
+          display: flex;
+          overflow-x: scroll;
+          scroll-snap-type: x mandatory;
+          margin-left: 10px;
+          width: 360px;
+          margin-top: 35px;
+          overflow: hidden;
+        }
+        .musics{
+          scroll-snap-align: center;
+          }
+        .cds{
+          user-select: none;
+          margin-left: 5px;
+          margin-right:5px;
+          height: 300px;
+            >img{
+            width: 300px;
+            border-radius: 50%;
+            border:#181818 2px solid;
+            }
+            >.cdsHole{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border:#181818 1px solid;
+            background-color: #000000;
+            position: relative;
+            top: -175px;
+            left: 125px;
+            }
+          }
+        .cds:hover{
+          >img{
+            animation: rotate 2s linear infinite;
+          }
+        }
+        @keyframes rotate{
+          0%{
+            transform: rotate(0deg);
+          }
+          100%{
+            transform: rotate(360deg);
+          }
+        }
+        #music1{
+          >.cds{
+            margin-left: 30px;
+          }
+          >.cds>.cdsHole{
+            background-color: #e2e2e2;
+          }
+          .musicName,
+          .musicArtist{
+            margin-left: 50px;
+          }
+        }
+        #music2{
+          >.cds>.cdsHole{
+            background-color: #d38b8b;
+          }
+        }
+        #music3{
+          >.cds>.cdsHole{
+            background-color: #7c7089;
+          }
+        }
+        #music4{
+          >.cds>.cdsHole{
+            background-color: #ffd5ee;
+          }
+        }
+        #music5{
+          >.cds{
+            margin-right: 30px;
+          }
+          >.cds>.cdsHole{
+            background-color: #e9d9ff;
+          }
+        }
+        .musicName{
+          margin-top: 20px;
+          margin-left: 30px;
+          font-size: 30px;
+          font-weight: 900;
+          color: #4b4b4b;
+          width: 260px;
+        }
+        .musicArtist{
+          margin-top: 10px;
+          margin-left: 30px;
+          font-size: 20px;
+          font-weight: 400;
+          color: #8e8e8e;
         }
         #contact {
           background-image: url("contactBackground.png");
@@ -486,7 +613,134 @@
         }
         #music {
           background-image: url("musicBackground.png");
+          background-color: #b5f5ff;
+          transition: background-color 0.5s ease-in-out;
           background-size: cover;
+        }
+        .musicContainer{
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .albumContainer{
+          margin: 0 auto;
+          width: 400px;
+          height: 500px;
+          border-radius: 10%;
+          background-color: rgba(255, 255, 255, 0.6) ;
+          border: 10px outset rgba(255, 255, 255, 0.6);
+        }
+        .musicButton{
+          position:relative;
+          width: 40px;
+          height: 260px;
+          border-radius: 40%;
+          border: none;
+          background: none;
+        }
+        .musicPrevious{
+          bottom: 400px;
+        }
+        .musicNext{
+          bottom: 400px;
+          left: 300px;
+        }
+        .albumSlider{
+          display: flex;
+          overflow-x: scroll;
+          scroll-snap-type: x mandatory;
+          margin-left: 10px;
+          width: 360px;
+          margin-top: 35px;
+          overflow: hidden;
+        }
+        .musics{
+          scroll-snap-align: center;
+          }
+        .cds{
+          user-select: none;
+          margin-left: 5px;
+          margin-right: 5px;
+          height: 300px;
+            >img{
+            width: 300px;
+            border-radius: 50%;
+            border:#181818 2px solid;
+            }
+            >.cdsHole{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border:#181818 1px solid;
+            background-color: #000000;
+            position: relative;
+            top: -175px;
+            left: 125px;
+            }
+          }
+        .cds:hover{
+          >img{
+            animation: rotate 2s linear infinite;
+          }
+        }
+        @keyframes rotate{
+          0%{
+            transform: rotate(0deg);
+          }
+          100%{
+            transform: rotate(360deg);
+          }
+        }
+        #music1{
+          >.cds{
+            margin-left: 30px;
+          }
+          >.cds>.cdsHole{
+            background-color: #e2e2e2;
+          }
+          .musicName,
+          .musicArtist{
+            margin-left: 50px;
+          }
+        }
+        #music2{
+          >.cds>.cdsHole{
+            background-color: #d38b8b;
+          }
+        }
+        #music3{
+          >.cds>.cdsHole{
+            background-color: #7c7089;
+          }
+        }
+        #music4{
+          >.cds>.cdsHole{
+            background-color: #ffd5ee;
+          }
+        }
+        #music5{
+          >.cds{
+            margin-right: 30px;
+          }
+          >.cds>.cdsHole{
+            background-color: #e9d9ff;
+          }
+        }
+        .musicName{
+          margin-top: 20px;
+          margin-left: 30px;
+          font-size: 30px;
+          font-weight: 900;
+          color: #4b4b4b;
+          width: 260px;
+        }
+        .musicArtist{
+          margin-top: 10px;
+          margin-left: 30px;
+          font-size: 20px;
+          font-weight: 400;
+          color: #8e8e8e;
         }
         #contact {
           background-image: url("contactBackground.png");
@@ -531,6 +785,7 @@
           width: 340px;
         }
       }
+      /*768 이하*/
       @media screen and (max-width: 768px) {
         nav{
           display:none;
@@ -733,8 +988,135 @@
           }
         }
         #music {
-          background-image: url("musicVerticalBackground.png");
+          background-image: url("musicVertical.png");
+          background-color: #b5f5ff;
+          transition: background-color 0.5s ease-in-out;
           background-size: cover;
+        }
+        .musicContainer{
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .albumContainer{
+          margin: 0 auto;
+          width: 400px;
+          height: 500px;
+          border-radius: 10%;
+          background-color: rgba(255, 255, 255, 0.6) ;
+          border: 10px outset rgba(255, 255, 255, 0.6);
+        }
+        .musicButton{
+          position:relative;
+          width: 40px;
+          height: 260px;
+          border-radius: 40%;
+          border: none;
+          background: none;
+        }
+        .musicPrevious{
+          bottom: 400px;
+        }
+        .musicNext{
+          bottom: 400px;
+          left: 300px;
+        }
+        .albumSlider{
+          display: flex;
+          overflow-x: scroll;
+          scroll-snap-type: x mandatory;
+          margin-left: 10px;
+          width: 360px;
+          margin-top: 35px;
+          overflow: hidden;
+        }
+        .musics{
+          scroll-snap-align: center;
+          }
+        .cds{
+          user-select: none;
+          margin-left: 5px;
+          margin-right:5px;
+          height: 300px;
+            >img{
+            width: 300px;
+            border-radius: 50%;
+            border:#181818 2px solid;
+            }
+            >.cdsHole{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border:#181818 1px solid;
+            background-color: #000000;
+            position: relative;
+            top: -175px;
+            left: 125px;
+            }
+          }
+        .cds:hover{
+          >img{
+            animation: rotate 2s linear infinite;
+          }
+        }
+        @keyframes rotate{
+          0%{
+            transform: rotate(0deg);
+          }
+          100%{
+            transform: rotate(360deg);
+          }
+        }
+        #music1{
+          >.cds{
+            margin-left: 30px;
+          }
+          >.cds>.cdsHole{
+            background-color: #e2e2e2;
+          }
+          .musicName,
+          .musicArtist{
+            margin-left: 50px;
+          }
+        }
+        #music2{
+          >.cds>.cdsHole{
+            background-color: #d38b8b;
+          }
+        }
+        #music3{
+          >.cds>.cdsHole{
+            background-color: #7c7089;
+          }
+        }
+        #music4{
+          >.cds>.cdsHole{
+            background-color: #ffd5ee;
+          }
+        }
+        #music5{
+          >.cds{
+            margin-right: 30px;
+          }
+          >.cds>.cdsHole{
+            background-color: #e9d9ff;
+          }
+        }
+        .musicName{
+          margin-top: 20px;
+          margin-left: 30px;
+          font-size: 30px;
+          font-weight: 900;
+          color: #4b4b4b;
+          width: 260px;
+        }
+        .musicArtist{
+          margin-top: 10px;
+          margin-left: 30px;
+          font-size: 20px;
+          font-weight: 400;
+          color: #8e8e8e;
         }
         #contact {
           background-image: url("contactVerticalBackground.png");
@@ -793,6 +1175,7 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#aboutMe">About Me</a></li>
+          <li><a href="#music">Music</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -846,22 +1229,123 @@
           <div class="aboutContentsContainerBig">
             <div class="aboutContentsContainer1">
               <h3>FROM</h3>
-              가천대학교<br />인공지능전공
+              가천대학교<br>인공지능전공
             </div>
             <div class="aboutContentsContainer2">
               <h3>STUDYING</h3>
-              C<br />JavaScript<br />React
+              C<br>JavaScript<br>React
             </div>
             <div class="aboutContentsContainer3">
               <h3>LOVE</h3>
-              프로그래밍<br />방탈출<br />패션<br />마라탕
+              프로그래밍<br>방탈출<br>패션<br>마라탕<br>음악
             </div>
           </div>
         </div>
       </section>
       <section class="page" id="music">
         <div class="musicContainer">
-          
+          <div class="albumContainer">
+            <div class="albumSlider">
+              <div class="musics" id="music1">
+                <div class="cds" onclick="window.open('https://www.youtube.com/watch?v=IyVPyKrx0Xo', '_blank')">
+                  <img src="album1.png" alt="album1"></img>
+                  <div class="cdsHole"></div>
+                </div>
+                <div class="musicName">My Type</div>
+                <div class="musicArtist">Saint Motel</div>
+              </div>
+              <div class="musics" id="music2">
+                <div class="cds" onclick="window.open('https://www.youtube.com/watch?v=_fMzDIIsWKA', '_blank')">
+                  <img src="album2.png" alt="album2" />
+                  <div class="cdsHole"></div>
+                </div>
+                <div class="musicName">Preach</div>
+                <div class="musicArtist">Saint Motel</div>
+              </div>
+              <div class="musics" id="music3">
+                <div class="cds" onclick="window.open('https://www.youtube.com/watch?v=2SUwOgmvzK4', '_blank')">
+                  <img src="album3.png" alt="album3"></img>
+                  <div class="cdsHole"></div>
+                </div>
+                <div class="musicName">The Less I Know The Better</div>
+                <div class="musicArtist">Tame Impala</div>
+              </div>
+              <div class="musics" id="music4">
+                <div class="cds" onclick="window.open('https://www.youtube.com/watch?v=aUGA-RJoqNA', '_blank')">
+                  <img src="album4.png" alt="album4" />
+                  <div class="cdsHole"></div>
+                </div>
+                <div class="musicName">Break The Silence</div>
+                <div class="musicArtist">Various Artist</div>
+              </div>
+              <div class="musics" id="music5">
+                <div class="cds" onclick="window.open('https://www.youtube.com/watch?v=wyfz6FYSoPY', '_blank')">
+                  <img src="album5.png" alt="album5" />
+                  <div class="cdsHole"></div>
+                </div>
+                <div class="musicName">If I Were You</div>
+                <div class="musicArtist">Nothing But Thieves</div>
+              </div>
+              <div style="width:30px"></div>
+            </div>
+            <button class="musicButton musicPrevious" onClick="
+              const albumSliderElement1 = document.querySelector('.albumSlider');
+              const scrollPosition1 = albumSliderElement1.scrollLeft;
+              const backgroundElement1 = document.querySelector('#music');
+              console.log(scrollPosition1);
+              if (scrollPosition1 === 305) {
+                backgroundElement1.style.backgroundColor = '#b5f5ff' ;
+              }else if (scrollPosition1 === 615) {
+                backgroundElement1.style.backgroundColor = '#d38b8b' ;
+              }else if (scrollPosition1 === 925) {
+                backgroundElement1.style.backgroundColor = '#7c7089' ;
+              }else if (scrollPosition1 === 1240) {
+                backgroundElement1.style.backgroundColor = '#ffd5ee' ;
+              }else if (scrollPosition1 === 0) {
+                backgroundElement1.style.backgroundColor = '#e9d9ff' ;
+              }
+              albumSliderElement1.scroll({
+                left: scrollPosition1 - 300,
+                behavior: 'smooth'
+              });
+              if (scrollPosition1 === 0) {
+                albumSliderElement1.scroll({ 
+                  left: 1200,
+                  behavior: 'smooth'
+                });
+              }
+            "></button>
+            <button class="musicButton musicNext" onClick="
+              const albumSliderElement = document.querySelector('.albumSlider');
+              const scrollPosition = albumSliderElement.scrollLeft;
+              const backgroundElement = document.querySelector('#music');
+              if (scrollPosition === 1240) {
+                backgroundElement.style.backgroundColor = '#b5f5ff' ;
+              }
+              if (scrollPosition === 0) {
+                backgroundElement.style.backgroundColor = '#d38b8b' ;
+              }
+              if (scrollPosition === 305) {
+                backgroundElement.style.backgroundColor = '#7c7089' ;
+              }
+              if (scrollPosition === 615) {
+                backgroundElement.style.backgroundColor = '#ffd5ee' ;
+              }
+              if (scrollPosition === 925) {
+                backgroundElement.style.backgroundColor = '#e9d9ff' ;
+              }
+              albumSliderElement.scroll({
+                left: scrollPosition + 300,
+                behavior: 'smooth'
+              });
+              if (scrollPosition === 1240) {
+                albumSliderElement.scroll({ 
+                  left: 0,
+                  behavior: 'smooth'
+                });
+              }
+            "></button>
+          </div>
         </div>
       </section>
       <section class="page" id="contact">
