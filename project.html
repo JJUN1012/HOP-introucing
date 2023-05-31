@@ -1293,22 +1293,22 @@
               const scrollPosition1 = albumSliderElement1.scrollLeft;
               const backgroundElement1 = document.querySelector('#music');
               console.log(scrollPosition1);
-              if (scrollPosition1 === 305) {
+              if (scrollPosition1 > 290 && scrollPosition1 < 400) {
                 backgroundElement1.style.backgroundColor = '#b5f5ff' ;
-              }else if (scrollPosition1 === 615) {
+              }else if (scrollPosition1 >500 && scrollPosition1 < 700) {
                 backgroundElement1.style.backgroundColor = '#d38b8b' ;
-              }else if (scrollPosition1 === 925) {
+              }else if (scrollPosition1 >800 && scrollPosition1 < 1000) {
                 backgroundElement1.style.backgroundColor = '#7c7089' ;
-              }else if (scrollPosition1 === 1240) {
+              }else if (scrollPosition1 >1100 && scrollPosition1 < 1300) {
                 backgroundElement1.style.backgroundColor = '#ffd5ee' ;
-              }else if (scrollPosition1 === 0) {
+              }else if (scrollPosition1 <30) {
                 backgroundElement1.style.backgroundColor = '#e9d9ff' ;
               }
               albumSliderElement1.scroll({
                 left: scrollPosition1 - 300,
                 behavior: 'smooth'
               });
-              if (scrollPosition1 === 0) {
+              if (scrollPosition1 === 0 ) {
                 albumSliderElement1.scroll({ 
                   left: 1200,
                   behavior: 'smooth'
@@ -1325,13 +1325,13 @@
               if (scrollPosition === 0) {
                 backgroundElement.style.backgroundColor = '#d38b8b' ;
               }
-              if (scrollPosition === 305) {
+              if (scrollPosition >200 && scrollPosition < 400) {
                 backgroundElement.style.backgroundColor = '#7c7089' ;
               }
-              if (scrollPosition === 615) {
+              if (scrollPosition >515 && scrollPosition < 700) {
                 backgroundElement.style.backgroundColor = '#ffd5ee' ;
               }
-              if (scrollPosition === 925) {
+              if (scrollPosition >800 && scrollPosition < 1000) {
                 backgroundElement.style.backgroundColor = '#e9d9ff' ;
               }
               albumSliderElement.scroll({
