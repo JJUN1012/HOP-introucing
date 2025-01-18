@@ -122,10 +122,10 @@ nav {
   }
   .cds:hover {
     > img {
-      animation: rotate 1s linear infinite;
+      animation: rotate 1s ease infinite;
     }
       .cdsHole{
-        animation: rotate 1s linear infinite;
+        animation: rotate 1s ease infinite;
       }
   }
   @keyframes rotate {
